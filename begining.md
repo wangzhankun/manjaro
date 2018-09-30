@@ -1,9 +1,9 @@
 # change mirrors
 <code>
-sudo pacman-mirrors -gb testing -c China<br/>
-sudo pacman -S archlinuxcn -keyring<br/>
-sudo pacman -Syyu<br/>
-</code><br/>
+sudo pacman-mirrors -gb testing -c China <br/>
+sudo pacman -S archlinuxcn -keyring <br/>
+sudo pacman -Syyu <br/>
+</code> <br/>
 # chang dirs into english
 <code>
 vim .config/user-dirs.dirs<br/>
