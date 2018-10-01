@@ -1,52 +1,51 @@
 # change mirrors
-<code>
-sudo pacman-mirrors -gb testing -c China <br/>
-sudo pacman -S archlinuxcn -keyring <br/>
-sudo pacman -Syyu <br/>
-</code> <br/>
+<pre>
+sudo pacman-mirrors -gb testing -c China 
+sudo pacman -S archlinuxcn -keyring 
+sudo pacman -Syyu 
+</pre>
 ##  chang dirs into english
-<code>
-vim .config/user-dirs.dirs<br/>
-</code>
+<pre>
+vim .config/user-dirs.dirspre
+</pre>
 # Install software
 ## vim
-<code>
-sudo pacman -S vim<br/>
-</code>
+<pre>
+sudo pacman -S vimpre
+</pre>
 ## chrome
-<code>
-sudo pacman -S google-chrome<br/>
-</code>
+<pre>
+sudo pacman -S google-chromepre
+</pre>
 ## Sougoupinyin
-<code>
-sudo pacman -S fcitx<br/>
-sudo pacman -S fcitx-sogoupinyin<br/>
-vim ~/.xprifile<br/>
-        export GTK_IM_MODULE=fcitx<br/>
-        export QT_IM_MODULE=fcitx<br/>
-        export XMODIFIERS=@im=fcitx<br/>
-</code>
+<pre>
+sudo pacman -S fcitxpre
+sudo pacman -S fcitx-sogoupinyinpre
+vim ~/.xprifilepre
+        export GTK_IM_MODULE=fcitxpre
+        export QT_IM_MODULE=fcitxpre
+        export XMODIFIERS=@im=fcitxpre
+</pre>
 ## zsh & oh-my-zsh
-<code>
-sudo pacman -S zsh<br/>
-chsh -s /bin/zsh<br/>
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"<br/>
-sudo pacman -S autojump<br/>
-vim ~/.zshrc<br/>
-        plugins=(git autojump)<br/>
-</code>
+<pre>
+sudo pacman -S zshpre
+chsh -s /bin/zshpre
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"pre
+sudo pacman -S autojumppre
+vim ~/.zshrcpre
+        plugins=(git autojump)pre
+</pre>
 ## uget & aria2
-<code>
-sudo pacman -S uget<br/>
-sudo pacman -S aria2<br/>
-</code>
+<pre>
+sudo pacman -S ugetpre
+sudo pacman -S aria2pre
+</pre>
 ## wechat
-<code>
-sudo pacman -S electronic-wechat<br/>
-</code>
+<pre>
+sudo pacman -S electronic-wechatpre
+</pre>
 ## zeal
-<code>
-        sudo pacman -S zeal
-</code>
-and get docset here[website](https://github.com/Kapeli/feeds/）
-
+<pre>
+sudo pacman -S zeal
+</pre>
+and get docsets <a href = "https://github.com/Kapeli/feeds/">here</a>
