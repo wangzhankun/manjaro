@@ -49,3 +49,8 @@ sudo pacman -S electronic-wechatpre
 sudo pacman -S zeal
 </pre>
 and get docsets <a href = "https://github.com/Kapeli/feeds/">here</a>
+## typora
+<pre>
+sudo pacman -S typora
+</pre>
+## vscode
