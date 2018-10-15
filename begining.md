@@ -50,7 +50,7 @@ sudo pacman -S fcitx-configtool
 sudo gedit ~/.xprofile
         export GTK_IM_MODULE=fcitx
         export QT_IM_MODULE=fcitx
-        export XMODIFIERS="im=fcitx"
+        export XMODIFIERS="@im=fcitx"
 </pre>
 ## zsh & oh-my-zsh
 <pre>
