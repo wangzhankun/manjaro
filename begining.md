@@ -84,3 +84,6 @@ and get docsets <a href = "https://github.com/Kapeli/feeds/">here</a>
 sudo pacman -S typora
 </pre>
 ## vscode
+<pre>
+sudo pacman -S visual-studio-code-bin
+</pre>
