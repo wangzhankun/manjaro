@@ -49,12 +49,13 @@ sudo pacman -S google-chromepre
 </pre>
 ## Sougoupinyin
 <pre>
-sudo pacman -S fcitxpre
-sudo pacman -S fcitx-sogoupinyinpre
-vim ~/.xprifilepre
-        export GTK_IM_MODULE=fcitxpre
-        export QT_IM_MODULE=fcitxpre
-        export XMODIFIERS=@im=fcitxpre
+sudo pacman -S fcitx-sogoupinyin
+sudo pacman -S fcitx-im
+sudo pacman -S fcitx-configtool
+sudo gedit ~/.xprofile
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="im=fcitx"
 </pre>
 ## zsh & oh-my-zsh
 <pre>
