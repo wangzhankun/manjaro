@@ -31,7 +31,7 @@ Server = http://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 <pre>
 sudo pacman-mirrors -i -c China -m rank
 sudo pacman-mirrors -g
-sudo pacman -S archlinuxcn -keyring 
+sudo pacman -S archlinuxcn-keyring 
 sudo pacman -Syyu 
 </pre>
 ##  chang dirs into english
