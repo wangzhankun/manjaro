@@ -1,7 +1,7 @@
 # change mirrors
 <pre>
 1.切换中国源
-sudo gedit /etc/pacman-mirrors.conf
+sudo vi /etc/pacman-mirrors.conf
 如果提示没有gedit , 则执行命令 : sudo pacman -S gedit
 或者干脆直接nano 编辑，默认是有的
 修改如下地方为中国：
@@ -12,7 +12,7 @@ OnlyCountry = China
 <pre>
 2.增加archlinuxcn软件仓库以及各种开发工具源
 
-sudo gedit /etc/pacman.conf
+sudo vi /etc/pacman.conf
 
 添加以下内容：
 </pre>
