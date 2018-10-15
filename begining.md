@@ -18,10 +18,13 @@ sudo vi /etc/pacman.conf
 </pre>
 <pre>
 
-
-[archlinuxcn]
-SigLevel = Optional TrustedOnly
+[archlinuxcn] 
+SigLevel = Optional TrustedOnly 
 Server = http://mirrors.ustc.edu.cn/archlinuxcn/$arch
+Server= https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch#both IPv4 &; IPv6 
+#Server = https://mirrors.6.tuna.tsinghua.edu.cn/archlinuxcn/$arch 
+# only IPv6#Server = https://mirrors.4.tuna.tsinghua.edu.cn/archlinuxcn/$arch 
+# only IPv4#HTTP is also supported 
 </pre>
 <pre>
 sudo pacman-mirrors -i -c China -m rank
