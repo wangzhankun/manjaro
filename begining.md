@@ -1,6 +1,6 @@
 # change mirrors
 <pre>
-sudo pacman-mirrors -gb testing -c China 
+sudo pacman-mirrors -i -c China -m rank
 sudo pacman -S archlinuxcn -keyring 
 sudo pacman -Syyu 
 </pre>
