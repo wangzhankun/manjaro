@@ -59,9 +59,9 @@ export XMODIFIERS="im=fcitx"
 </pre>
 ## zsh & oh-my-zsh
 <pre>
-sudo pacman -S zshpre
-chsh -s /bin/zshpre
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"pre
+sudo pacman -S zsh zsh-completions
+chsh -s /bin/zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sudo pacman -S autojumppre
 vim ~/.zshrcpre
         plugins=(git autojump)pre
