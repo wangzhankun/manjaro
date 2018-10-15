@@ -22,11 +22,6 @@ sudo vi /etc/pacman.conf
 [archlinuxcn]
 SigLevel = Optional TrustedOnly
 Server = http://mirrors.ustc.edu.cn/archlinuxcn/$arch
-
-[arch4edu]
-SigLevel = Never
-Server = http://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
-
 </pre>
 <pre>
 sudo pacman-mirrors -i -c China -m rank
