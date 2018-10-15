@@ -36,16 +36,16 @@ sudo pacman -Syyu
 </pre>
 ##  chang dirs into english
 <pre>
-vim .config/user-dirs.dirspre
+vim .config/user-dirs.dirs
 </pre>
 # Install software
 ## vim
 <pre>
-sudo pacman -S vimpre
+sudo pacman -S vim
 </pre>
 ## chrome
 <pre>
-sudo pacman -S google-chromepre
+sudo pacman -S google-chrome
 </pre>
 ## Sougoupinyin
 <pre>
@@ -53,27 +53,27 @@ sudo pacman -S fcitx-sogoupinyin
 sudo pacman -S fcitx-im
 sudo pacman -S fcitx-configtool
 sudo gedit ~/.xprofile
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS="im=fcitx"
+        export GTK_IM_MODULE=fcitx
+        export QT_IM_MODULE=fcitx
+        export XMODIFIERS="im=fcitx"
 </pre>
 ## zsh & oh-my-zsh
 <pre>
 sudo pacman -S zsh zsh-completions
 chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-sudo pacman -S autojumppre
-vim ~/.zshrcpre
-        plugins=(git autojump)pre
+sudo pacman -S autojump
+vim ~/.zshrc
+        plugins=(git autojump)
 </pre>
 ## uget & aria2
 <pre>
-sudo pacman -S ugetpre
-sudo pacman -S aria2pre
+sudo pacman -S uget
+sudo pacman -S aria2
 </pre>
 ## wechat
 <pre>
-sudo pacman -S electronic-wechatpre
+sudo pacman -S electronic-wechat
 </pre>
 ## zeal
 <pre>
