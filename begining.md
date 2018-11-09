@@ -1,9 +1,7 @@
 # change mirrors
 <pre>
 1.切换中国源
-sudo vi /etc/pacman-mirrors.conf
-如果提示没有gedit , 则执行命令 : sudo pacman -S gedit
-或者干脆直接nano 编辑，默认是有的
+sudo gedit /etc/pacman-mirrors.conf
 修改如下地方为中国：
 </pre>
 <pre>
@@ -12,7 +10,7 @@ OnlyCountry = China
 <pre>
 2.增加archlinuxcn软件仓库以及各种开发工具源
 
-sudo vi /etc/pacman.conf
+sudo gedit /etc/pacman.conf
 
 添加以下内容：
 </pre>
@@ -22,10 +20,8 @@ sudo vi /etc/pacman.conf
 SigLevel = Optional TrustedOnly 
 Server = http://mirrors.ustc.edu.cn/archlinuxcn/$arch
 Server= https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
-#both IPv4 &; IPv6 
-#Server = https://mirrors.6.tuna.tsinghua.edu.cn/archlinuxcn/$arch 
-# only IPv6#Server = https://mirrors.4.tuna.tsinghua.edu.cn/archlinuxcn/$arch 
-# only IPv4#HTTP is also supported 
+Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
+Server = https://mirror.xtom.com.hk/archlinuxcn/$arch
 </pre>
 <pre>
 sudo pacman-mirrors -i -c China -m rank
