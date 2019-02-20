@@ -1,38 +1,32 @@
-# change mirrors
-<pre>
-1.切换中国源
-sudo gedit /etc/pacman-mirrors.conf
-修改如下地方为中国：
-</pre>
-<pre>
-OnlyCountry = China
-</pre>
-<pre>
-2.增加archlinuxcn软件仓库以及各种开发工具源
+# Change mirrors
 
-sudo gedit /etc/pacman.conf
-
-添加以下内容：
-</pre>
-<pre>
-
-[archlinuxcn] 
-SigLevel = Optional TrustedOnly 
-Server = http://mirrors.ustc.edu.cn/archlinuxcn/$arch
-Server= https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
-Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
-Server = https://mirror.xtom.com.hk/archlinuxcn/$arch
-</pre>
 <pre>
 sudo pacman-mirrors -i -c China -m rank
-sudo pacman-mirrors -g
-sudo pacman -S archlinuxcn-keyring 
 sudo pacman -Syyu 
 </pre>
+
 ##  chang dirs into english
 <pre>
 vim .config/user-dirs.dirs
 </pre>
+# Beauty
+
+```bash
+sudo pacman -S yaourt
+yaourt electron-ssr
+yaourt numix-gtk-theme
+yaourt numix-circle-icon-theme-git
+sudo pacman -S docky
+```
+
+And then, search *sweet* in https://www.gnome-look.org/
+
+Download and install it with the help of instruction.
+
+Change it by gnome-tweak.
+
+
+
 # Install software
 ## vim
 <pre>
@@ -48,13 +42,21 @@ sudo pacman -S fcitx-sogoupinyin
 sudo pacman -S fcitx-im
 sudo pacman -S fcitx-configtool
 sudo gedit ~/.xprofile
-        export GTK_IM_MODULE=fcitx
-        export QT_IM_MODULE=fcitx
-        export XMODIFIERS="@im=fcitx"
+
+		export LANG=zh_CN.UTF-8
+		export LANGUAGE=zh_CN:en_US
+		export LC_CTYPE=en_US.UTF-8
+		
+		export XIM=fctix
+		export XIM_PROGRAM=fctix
+	    export GTK_IM_MODULE=fcitx
+	    export QT_IM_MODULE=fcitx
+	    export XMODIFIERS="@im=fcitx"
 </pre>
+
 ## zsh & oh-my-zsh
 <pre>
-sudo pacman -S zsh zsh-completions
+sudo pacman -S zsh zsh-completions curl
 chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sudo pacman -S autojump
